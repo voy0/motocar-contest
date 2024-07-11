@@ -1,10 +1,13 @@
 :root {
     --bg: #000;
-
+    --blur: 7px;
 }
 
 body {
     background-color: none;
+    background-image: url("https://wutwaw-my.sharepoint.com/personal/01178591_pw_edu_pl/Documents/Foty/JUNE/candidates/piotr/20240610_183140.jpg");
+    background-position: center;
+    background-size: cover;
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -12,45 +15,83 @@ body {
     margin: 0 !important;
 }
 
-.bg-wrapper {
-    width: 100%;
-    position: absolute;
+a {
+    text-decoration: none;
 }
 
+
+
 .wrapper {
-    width: 100%;
+    transform: translateY(-15%);
+    width: 100vw;
     height: 100vh;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+
     flex-wrap: wrap;
 }
 
 .header-wrapper {
     color: #fff;
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
+
 .header1 {
+    align-self: self-end;
     font-size: 3em;
+    width: fit-content;
+    height: fit-content;
+    backdrop-filter: blur(var(--blur));
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 5px;
+}
+
+.photocar {
+    font-family: "Playwrite DK Uloopet", cursive;
+    font-weight: 200;
+}
+
+.photocar span {}
+
+.blu {
+    color: rgb(60, 141, 255);
+}
+
+.red {
+    color: rgb(255, 34, 0);
+}
+
+.dlu {
+    color: #0700de;
+}
+
+.options-container {
+    width: 100%;
+    display: flex;
+    align-self: baseline;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.options-container>.options-wrapper {
+    margin-top: 0;
 }
 
 .options-wrapper {
-    margin-top: 2em;
-    font-size: 1em;
-    width: 100%;
+    backdrop-filter: blur(var(--blur));
+    padding: 1.6em;
+    margin: 2em;
+    text-decoration: none;
+    font-size: 0.6em;
+    font-weight: 300;
+    border: solid 0.1em #fff;
+    border-radius: 4px;
 }
 
 .options-wrapper a {
-    padding: 1.2em;
-    margin: 2em;
-    background-color: transparent;
-    text-decoration: none;
-    font-size: 0.6em;
-    font-weight: 50;
-    border: solid 0.1em #fff;
-    border-radius: 0.2em;
-    color: white;
+    color: #fff;
 }
