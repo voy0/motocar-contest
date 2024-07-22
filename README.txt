@@ -1,4 +1,6 @@
-photocar contest
+motocar contest
+
+
 
 zrobić slajd obrazow 
 front page (index.html) będzie wyłącznie w czystym HTML/CSS/JS

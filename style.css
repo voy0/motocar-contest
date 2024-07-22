@@ -1,17 +1,17 @@
 :root {
     --bg: #000;
-    --blur: 7px;
+    --blur: 10px;
 }
 
 body {
-    background-color: none;
-    background-image: url("https://wutwaw-my.sharepoint.com/personal/01178591_pw_edu_pl/Documents/Foty/JUNE/candidates/piotr/20240610_183140.jpg");
+    background-image: url("img/1.JPG");
     background-position: center;
     background-size: cover;
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: 24px;
+    transition: 2s;
     margin: 0 !important;
 }
 
@@ -19,15 +19,19 @@ a {
     text-decoration: none;
 }
 
-
+.container {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
 .wrapper {
-    transform: translateY(-15%);
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-
     display: flex;
-
+    justify-items: center;
     flex-wrap: wrap;
 }
 
@@ -41,21 +45,24 @@ a {
 
 .header1 {
     align-self: self-end;
-    font-size: 3em;
-    width: fit-content;
+    text-align: center;
+    font-size: 3.5em;
+    width: 100vw;
     height: fit-content;
-    backdrop-filter: blur(var(--blur));
     padding: 0.5em;
     margin: 0.5em;
+    margin-top: 0;
+    padding-top: 0;
     border-radius: 5px;
+    mix-blend-mode: luminosity;
 }
 
-.photocar {
-    font-family: "Playwrite DK Uloopet", cursive;
-    font-weight: 200;
+.motocar {
+    font-family: "Playwrite CU", cursive;
+    font-weight: 800;
 }
 
-.photocar span {}
+.motocar span {}
 
 .blu {
     color: rgb(60, 141, 255);
@@ -68,6 +75,18 @@ a {
 .dlu {
     color: #0700de;
 }
+
+
+.wikiquote-wrapper {}
+
+.wikiquote {
+    width: 100%;
+    color: white;
+    text-align: justify;
+
+    padding: 0.5em;
+}
+
 
 .options-container {
     width: 100%;
